@@ -1,14 +1,160 @@
-/* основной цвет текста #757575 */
-/* цвет текста заголовка #212121 */
-/* цвет акцента #2196F3 */
-/* цвет ховера кнопки #188CE8 */
-/* основной белый цвет #FFFFFF */
-/* вторичный цвет фона #F5F4FA */
-/* чёрный цвет логотипа #000000 */
-/* цвет фона подвала #2F303A */
-/* цвет контакта подвала rgba(255, 255, 255, 0.6) */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --logo-black-color: #000000;
+  --footer-bg-color: #2f303a;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
 
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+/* ul {
+  list-style: none;
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+} */
+
+/* Утилиты */
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--logo-black-color);
+}
+
+.logo.inverse {
+  color: var(--primary-white-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Site nav и Contacts header */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.contacts-header .link {
+  color: inherit;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.active,
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--footer-bg-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover-color);
+}
+
+/* Section */
+
+.section.secondary {
+  background-color: var(--secondary-bg-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Стили для index.html */
+
+/* Features */
+
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+
+.team-list .name {
+  color: var(--title-text-color);
+}
+
+/* Page footer */
+
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+
+/* Address */
+
+.address {
+  color: var(--primary-white-color);
+}
+
+/* Contacts footer */
+
+.contacts-footer .link {
+  color: var(--footer-contact-color);
+}
+
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+  color: var(--accent-color);
+}
+
+/* Стили для portfolio.html */
+
+/* Filter */
+
+.filter-list .btn {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+}
+
+.filter-list .btn:hover,
+.filter-list .btn:focus,
+.filter-list .btn.active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Works */
+
+.works-list .title {
+  color: var(--title-text-color);
 }
